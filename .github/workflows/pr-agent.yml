@@ -31,6 +31,10 @@ jobs:
 
           CONFIG.RESPONSE_LANGUAGE: "ru-RU"
           PR_DESCRIPTION.PUBLISH_DESCRIPTION_AS_COMMNENT: true
-          PR_AGENT.PR_ACTIONS: "review,describe"
+          PR_DESCRIPTION.ENABLE_PR_DIAGRAM: false
+          PR_DESCRIPTION.GENERATE_AI_TITLE: true
+          PE_REVIEW.ENABLE_REVIEW_LABELS_EFFORT: true
+          PR_REVIEWER.EXTRA_INSTRUCTIONS: "Отвечай на русском. Обращай особое внимание на аллокацию памяти, производительность LINQ запросов и потенциальные проблемы N+1 в Entity Framework. Предлагай более оптимальные структуры данных, если это уместно"
+          PR_AGENT.PR_ACTIONS: "review,describe,improve"
           
           
